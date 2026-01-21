@@ -1,0 +1,14 @@
+name: "CI"
+jobs:
+  - name: "run-dbt"
+    steps:
+      - name: Clone repo
+        plugin: git_clone@v1
+        url: "https://github.com/g0v/tw_campaign_finance.git"
+        # TODO secrets
+      - name: Run rosetta
+        plugin: rosetta@v1
+        command: rosetta --version
+      - name: Run dbt
+        plugin: dbt@v1
+        command: dbt seed && dbt run
