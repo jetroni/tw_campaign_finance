@@ -2,6 +2,6 @@ name: "CI"
 jobs:
   - name: "run-dbt"
     steps:
-      - name: Run dbt
-        plugin: dbt@v1
-        command: dbt seed && dbt run
+      - name: Run kinetica
+        plugin: kinetica_cli@v1
+        command: kinetica --version
