@@ -1,7 +1,7 @@
 name: "CI"
 jobs:
-  - name: "run-kisql"
+  - name: "run-kinetica-cli"
     steps:
-      - name: Run kisql
-        plugin: kisql@v1
+      - name: Run kinetica cli
+        plugin: kinetica_cli@v1
         command: kisql --version
