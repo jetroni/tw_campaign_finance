@@ -4,4 +4,4 @@ jobs:
     steps:
       - name: Run kinetica cli
         plugin: kinetica_cli@v1
-        command: KI_PWD='Jetron123#' kisql --url https://cluster1450.saas.kinetica.com/cluster1450/gpudb-0;CombinePrepareAndExecute=1;RowsPerFetch=20000 --user jetronsaiti_gmail --isql --showTime false --format delim --delim ',' --sql 'SELECT * FROM jetronsaiti_gmail.mytable'
+        command: KI_PWD='Jetron123#' kisql --url "https://cluster1450.saas.kinetica.com/cluster1450/gpudb-0;CombinePrepareAndExecute=1;RowsPerFetch=20000" --user jetronsaiti_gmail --isql --showTime false --format delim --delim ',' --sql 'SELECT * FROM jetronsaiti_gmail.mytable'
