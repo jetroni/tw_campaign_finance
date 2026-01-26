@@ -1,6 +1,10 @@
 name: "CI"
 jobs:
-  - name: "run-kinetica-cli"
+  - name: "run-combo"
+    steps:
+      - name: Run rosetta
+        plugin: rosetta@v1
+        command: rosetta --version
     steps:
       - name: Run kinetica cli
         plugin: kinetica_cli@v1
