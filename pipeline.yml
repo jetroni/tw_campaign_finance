@@ -2,9 +2,9 @@ name: "CI"
 jobs:
   - name: "dbt-pipeline"
     steps:
-      - name: Echo finished process
+      - name: Echo starting process
         plugin: command@v1
-        command: 'echo "Finished dbt pipeline"'
+        command: 'echo "Doing our setup process"'
       - name: Run dbt check version
         plugin: dbt@v1
         command: dbt --version
