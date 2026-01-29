@@ -5,6 +5,3 @@ jobs:
       - name: Run dbt
         plugin: dbt@v1
         command: dbt --version
-      - name: Echo finished process
-        plugin: command@v1
-        command: 'echo "Finished dbt pipeline"'
