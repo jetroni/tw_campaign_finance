@@ -2,6 +2,6 @@ name: "CI"
 jobs:
   - name: "dbt-pipeline"
     steps:
-      - name: Run dbt
+      - name: Run dbt check version
         plugin: dbt@v1
         command: dbt --version
